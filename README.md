@@ -74,45 +74,9 @@ go run server.go
 
 Your sources will be compiled to your `$GOPATH/bin` directory. Your application will be running at `http://localhost:8080`. You can also verify the state of your locally running application using the Selenium UI test script included in the `scripts` directory.
 
-#### IBM Cloud Developer Tools
-
-Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your machine by running the following command:
-```
-curl -sL https://ibm.biz/idt-installer | bash
-```
-
-Create an application on IBM Cloud by running:
-
-```bash
-ibmcloud dev create
-```
-
-This will create and download a starter application with the necessary files needed for local development and deployment.
-
-Your application will be compiled with Docker containers. To compile and run your app, run:
-
-```bash
-ibmcloud dev build
-ibmcloud dev run
-```
-
-This will launch your application locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the commands:
-
-```bash
-ibmcloud dev deploy -t buildpack // to Cloud Foundry
-ibmcloud dev deploy -t container // to K8s cluster
-```
-
-You can build and debug your app locally with:
-
-```bash
-ibmcloud dev build --debug
-ibmcloud dev debug
-```
 
 ## Next steps
 * Learn more about augmenting your Go applications on IBM Cloud with the [Go Programming Guide](https://cloud.ibm.com/docs/go?topic=go-getting-started).
-* Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
 ## License
 
